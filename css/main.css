@@ -1,0 +1,85 @@
+/*   Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ysabeau+SC:wght@1..1000&display=swap');
+
+/* universal selector -apply for whole document */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Source Code Pro", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+/* Tag selector -tag with html tag name  */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../assets/photo/bg.png");
+    cursor: url('../assets/cursor/cursor-svgrepo-com.svg'), auto;
+}
+/* header style */
+header {
+    display: flex;
+    height: 20vh;
+
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height:85px;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffff;
+    color: #051922;
+    /* padding: 12px; */
+    
+}
+
+button{
+    background-color: #6addba;
+    padding: 4px;
+    border-radius: 5.9px;
+
+}
+/* after moving cursor within an element it active */
+button:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: orange;
+    transition: all .2s ease-out;
+}
+a{
+    display: inline-block;
+    margin: 0 35px;
+    transition: all .6s ease;
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+}
+
+#logomain {
+    display: flex;
+    margin-top: 1vh;
+    height: 50px;
+    width: auto;
+
+}
+
+logo {
+    width: 10%;
+    height: auto;
+}
+/* end of header style  */
+.hero{
+    /* margin-top: 80px; */
+    height: 125vh;
+    /* background-color: aqua; */
+}
