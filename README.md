@@ -1,2 +1,2 @@
 # LearnWithPoudel
- Providing Knolege to my college friends
+ Providing learning platform  to my college friends
