@@ -1,0 +1,269 @@
+/* google fonts poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+/* flaticon */
+@import url("https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css");
+
+* {
+  margin: 0;
+
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+}
+
+body {
+  max-height: 100vh;
+  background-color: #1f252e;
+}
+
+/*navbar style */
+
+header {
+  padding: 1.7rem 1rem;
+
+  background-color: #fff;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  max-width: 80%;
+
+  margin: auto;
+
+  align-items: center;
+
+  background-color: transparent;
+}
+
+.logo {
+  font-size: 1.3rem;
+
+  font-weight: 800;
+}
+
+.logo a {
+  color: #fff;
+
+  text-decoration: none;
+}
+
+nav a {
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 0.97rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0.7px;
+
+  padding: 1rem;
+
+  padding: 0.4rem 1rem;
+}
+.signup{
+  border-radius: 0.7rem;
+  padding: 0.2rem;
+  color: #1f252e;
+  background-color: rgb(206, 84, 251);
+}
+.signup:hover{
+  color: #1f252e;
+
+  background-color: #00e8f8;
+
+  box-shadow: 0 0 20px #00e8f8;
+
+  transition: all 0.3s ease-in-out;
+
+}
+
+nav a.active,
+nav a:hover {
+  color: #00e8f8;
+
+  border-radius: 1rem;
+
+  transition: all.3s ease-in-out;
+}
+
+#click {
+  display: none;
+}
+
+.menu i {
+  color: #00e8f8;
+}
+
+.menu {
+  display: none;
+}
+
+/* Nav */
+
+section {
+  margin: 2rem 8.5rem;
+}
+
+.main {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin: 5rem auto;
+}
+
+.main h1 {
+  font-size: 2.5rem;
+
+  font-weight: 600;
+
+  color: #fff;
+
+  /* animation: check 1s ease forwards;
+
+        animation-delay: .1s; */
+}
+
+.main p {
+  margin-top: 1rem;
+
+  font-size: 0.98rem;
+
+  color: #fff;
+}
+
+.social {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 1.4rem;
+
+  margin-top: 1.7rem;
+}
+
+.social a {
+  color: #00e8f8;
+
+  font-size: 1rem;
+
+  border: 1.6px solid #00e8f8;
+
+  border-radius: 50%;
+
+  padding: 0.35rem;
+
+  text-align: center;
+
+  width: 26px;
+}
+
+.social a:hover {
+  color: #1f252e;
+
+  background-color: #00e8f8;
+
+  box-shadow: 0 0 20px #00e8f8;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.main h1 span{
+  font-size: 1.5rem;
+  color: #00e8f8;
+}
+
+.images {
+  /* background-image: url(/img/graph5.png); */
+
+  background-repeat: no-repeat;
+
+  background-position: 0 -75px;
+
+  -webkit-box-shadow: 0 10px 10px -10px #000000;
+
+  -moz-box-shadow: 0 10px 10px -10px #000000;
+
+  box-shadow: 0px 16px 4px -10px #00e8f8;
+
+  width: 528px;
+
+  background-size: cover;
+}
+
+ @keyframes check {
+
+        0% {
+
+            transform: translateY(-100px);
+
+            opacity: 0;
+
+        }
+
+
+
+        100% {
+
+            transform: translateY(0);
+
+            opacity: 1;
+
+        }
+
+    }
+
+@media only screen and (max-width: 480px) {
+  .menu {
+    display: block;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #244d61;
+  }
+
+  header {
+    padding: 0.7rem 1rem;
+
+    align-items: center;
+
+    max-width: 100%;
+  }
+
+  nav {
+    position: absolute;
+
+    display: grid;
+
+    top: 75px;
+
+    text-align: center;
+
+    background-color: #4c5c72;
+
+    right: -100%;
+
+    z-index: 1;
+
+    width: 100%;
+  }
+
+  #click:checked ~ nav {
+    right:  0%;
+
+    transition: all 0.3s ease;
+    /* background: transparent; */
+  }
+
+  section {
+    margin: 1rem 1.5rem;
+  }
+}
