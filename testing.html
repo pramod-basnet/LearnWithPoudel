@@ -4,22 +4,24 @@
     <title>Responsive Navbar</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="./css/index.css" />
-  </head>
-  <body>
-    <div class="navbar flex  justifycenter">
 
-      <div class="">
-        <a href="#" target="_blank">Home</a>
-        <a href="#" target="_blank">About</a>
-        <a href="#" target="_blank">Projects</a>
-        <a href="#" target="_blank">Contact us</a>
-      </div>
-      <button class="bg-sky-500 hover:bg-sky-700 ...">
-        Save changes
-      </button>
-    </div>
-  </div>
-<script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .footer-container {
+        
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,3fr));
+        /* gap: 50px; */
+        justify-content: center;
+        background-color: #000000;
+      }
+      .first-column , .second-column ,.third-column{
+        margin: 2px;
+        background-color: #f63939;
+      }
+    </style>
+  </head>
+
+  <body>
+  
   </body>
 </html>
